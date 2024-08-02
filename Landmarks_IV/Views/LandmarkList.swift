@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LandmarkList: View {
   var body: some View {
-    List(landmarks, id: \.id) { landmark in // is now dynamic
+    List(landmarks) { landmark in // is now dynamic
       LandmarkRow(landmark: landmark)
     }
   }
