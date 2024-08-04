@@ -19,7 +19,9 @@ struct HikeView: View {
                 Spacer()
 
                 Button {
+                  withAnimation {
                     showDetail.toggle()
+                  }
                 } label: {
                     Label("Graph", systemImage: "chevron.right.circle")
                         .labelStyle(.iconOnly)
